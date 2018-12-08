@@ -46,4 +46,6 @@ Reboot the pi or run the command above.
 ## Connect
 Use a browser on a computer or phone to connect to the pi and start playing music.
 
+When prompted leave the user name blank and type in the password you set earlier.
+
 `http://<pi-address>:8080/`
