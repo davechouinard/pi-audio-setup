@@ -4,7 +4,7 @@ Simple audio server setup to play local high quality audio files.
 
 This project was created to free up my laptop from always being connected to the stereo to play music.
 
-Since the on-board digital-to-analog converter on the raspberry pi is likely low quality we'll use a dedicated 
+Since the digital-to-analog converter on the raspberry pi is likely low quality we'll use a dedicated 
 USB DAC to do that conversion. If you wanted to spend extra and don't mind the extra cable,
 a DAC with a dedicated power supply would likely be even better.
 
