@@ -38,7 +38,7 @@ Exit vlc
 
 ```
 # add the following line to /etc/rc.local
-vlc -I http &
+vlc -I http &>/tmp/vlc.log &
 ```
 
 Reboot the pi or run the command above.
