@@ -9,6 +9,14 @@ USB DAC to do that conversion. If you wanted to spend more and don't mind the ex
 a DAC with a dedicated power supply would likely be even better.
 
 ```
+Plug the usb hub into a power outlet to power it.
+Plug a mini usb cable from the pi power connector to the usb hub to power the pi.
+Plug the computer usb cable from the usb hub into an open usb port on the pi 
+so the pi can communicate with devices plugged into the usb hub.
+Plug the usb cable on the dac into the powered usb hub.
+Plug a usb music drive into the usb hub.
+Plug the rca outputs on the dac into rca inputs on the amp.
+
 +-----------+    +-----------+
 |           |    |           |   +-------------+
 |           +---->           <---+  usb drive  |
