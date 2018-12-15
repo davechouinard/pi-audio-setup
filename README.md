@@ -9,19 +9,38 @@ USB DAC to do that conversion. If you wanted to spend more and don't mind the ex
 a DAC with a dedicated power supply would likely be even better.
 
 ```
-+--------------------+               +--------------------+               +---------------------+
-|                    |               |                    |               |                     |
-|                    |               |                    |               |                     |
-|   raspberry pi     |  usb cable    |      usb dac       |  rca cables   |    amp/speakers     |
-|                    +---------------+                    +---------------+                     |
-|                    |               |                    |               |                     |
-|                    |               |                    |               |                     |
-+--------------------+               +--------------------+               +---------------------+
++-----------+    +-----------+
+|           |    |           |   +-------------+
+|           |    |           <---+  usb drive  |
+|   pi      +---->           |   +-------------+
+|           |    |           |
+|           |    |  powered  |
++-----------+    |  usb hub  |
++-----------+    |           |
+|           |    |           |
+|           |    |           |
+|   dac     +---->           |
+|           |    |           |
+|           |    |           |
++-----+-----+    +-----------+
+      |
+      |
++-----v-----+    +-----------+
+|           +---->  speaker  |
+|           |    +-----------+
+|    amp    |
+|           |    +-----------+
+|           +---->  speaker  |
++-----------+    +-----------+
+
 ```
 
 ## Setup
 Assumes NOOBS or other Debian based OS is running on the pi and a static IP has been assigned.
 ```
+alsamixer
+# F6->Select USB DAC->(Make sure not muted, press 'm')->ESC
+
 sudo apt-get update 
 sudo apt-get install vlc
 vlc &
@@ -45,7 +64,7 @@ su -c "vlc -I http &>/tmp/vlc.log" pi &
 Reboot the pi or run the command above.
 
 ## Connect
-Use a browser on a computer or phone to connect to the pi and start playing music.
+Use a browser to connect to the pi and start playing music.
 
 When prompted leave the user name blank and type in the password you set earlier.
 
