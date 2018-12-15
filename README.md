@@ -28,17 +28,18 @@ vlc &
 ```
 
 In the vlc interface go to: 
-`Tools->Preferences (select "All" radio-button)->Interface->Main interfaces->Lua` Set a password and 'Save'.
+`Tools->Preferences (select "All" radio button)->Interface->Main interfaces->Lua` Set a password and 'Save'.
 
 Plug in a usb drive with audio files to the pi and setup a playlist etc. in vlc.
 
-Verify audio is going to the correct output source `Audio->Audio Device` select the USB DAC.
+Set default audio to the correct output device:
+`Tools->Preferences->Audio (select "All" radio button)->Output Modules->ALSA->Audio output device` Select the USB DAC default audio device.
 
 Exit vlc
 
 ```
 # add the following line to /etc/rc.local
-vlc -I http &>/tmp/vlc.log &
+su -c "vlc -I http &>/tmp/vlc.log" pi &
 ```
 
 Reboot the pi or run the command above.
