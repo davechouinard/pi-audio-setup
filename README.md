@@ -11,9 +11,9 @@ a DAC with a dedicated power supply would likely be even better.
 ```
 +-----------+    +-----------+
 |           |    |           |   +-------------+
-|           |    |           <---+  usb drive  |
-|   pi      +---->           |   +-------------+
-|           |    |           |
+|           +---->           <---+  usb drive  |
+|   pi      |    |           |   +-------------+
+|           <----+           |
 |           |    |  powered  |
 +-----------+    |  usb hub  |
 +-----------+    |           |
@@ -32,7 +32,6 @@ a DAC with a dedicated power supply would likely be even better.
 |           |    +-----------+
 |           +---->  speaker  |
 +-----------+    +-----------+
-
 ```
 
 ## Setup
