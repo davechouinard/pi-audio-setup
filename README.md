@@ -56,8 +56,13 @@ vlc &
 Set a password for the web interface:
 `Tools->Preferences (select "All" radio button)->Interface->Main interfaces->Lua` Set a password and 'Save'.
 
-Set default audio to the correct output device:
-`Tools->Preferences->Audio (select "All" radio button)->Output Modules->ALSA->Audio output device` Select the USB DAC default audio device and 'Save'.
+Set audio output to the correct output device:
+
+`Tools->Preferences->Audio`: select "All" radio button
+
+`Output modules->Audio output module:` ALSA audio output
+
+`Output modules->ALSA->Audio output device:` Select the USB Audio Default Audio Device and 'Save'.
 
 Plug in a usb drive with audio files to the pi and setup a playlist etc. in vlc.
 
